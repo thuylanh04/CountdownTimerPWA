@@ -1,0 +1,106 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: url("https://picsum.photos/1920/1080") no-repeat center/cover;
+  color: white;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 220px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  padding: 8px;
+  cursor: pointer;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.sidebar li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.event-form input,
+.event-form textarea {
+  display: block;
+  width: 100%;
+  margin: 5px 0;
+  padding: 8px;
+}
+
+.event-form button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.event-detail {
+  margin-top: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.countdown {
+  font-size: 1.5em;
+  margin: 10px 0;
+}
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+}
+.event-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.event-title {
+  cursor: pointer;
+  flex: 1;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  color: red;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.delete-btn:hover {
+  color: darkred;
+}
